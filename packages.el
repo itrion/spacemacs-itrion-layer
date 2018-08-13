@@ -34,7 +34,6 @@
     ;; multiple-cursors
     visual-regexp
     visual-regexp-steroids
-    base-16-theme
     )
   "The list of Lisp packages required by the itrion layer.
 
@@ -78,11 +77,4 @@ Each entry is either:
   "configure vistual regexp steroids according to its repo
   https://github.com/benma/visual-regexp-steroids.el/"
   (use-package visual-regexp-steroids))
-
-(defun itrion/init-base-16-theme ()
-  "Configures the themes according to this page https://github.com/belak/base16-emacs"
-  (use-package base16-theme
-    :ensure t
-    :config
-    (load-theme 'base16-default-dark t)))
 ;;; packages.el ends here
